@@ -2,9 +2,6 @@
     "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
     "contentVersion": "1.0.0.0",
     "parameters": {
-        "subscriptionId": {
-            "value": "8502a4a4-5a10-4c54-891c-f1d14bb5bf6f"
-        },
         "name": {
             "value": "sdninfra-arm"
         },
@@ -19,21 +16,6 @@
         },
         "alwaysOn": {
             "value": false
-        },
-        "sku": {
-            "value": "Free"
-        },
-        "skuCode": {
-            "value": "F1"
-        },
-        "workerSize": {
-            "value": "0"
-        },
-        "workerSizeId": {
-            "value": "0"
-        },
-        "numberOfWorkers": {
-            "value": "1"
         },
         "currentStack": {
             "value": "node"
