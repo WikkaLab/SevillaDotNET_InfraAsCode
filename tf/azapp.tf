@@ -8,15 +8,15 @@ resource "azurerm_resource_group" "oneresgroup" {
 }
 
 resource "azurerm_service_plan" "aservplan" {
-  name                = "sdninfra-tf-sp"
-  resource_group_name = azurerm_resource_group.oneresgroup.name
+  name                = "sdn-asp"
+  resource_group_name = "sdn-rg"
   location            = "West Europe"
   sku_name            = "Free"
 }
 
 resource "azurerm_windows_web_app" "awebapp" {
   name                = "sdninfra-tf"
-  resource_group_name = azurerm_resource_group.oneresgroup.name
+  resource_group_name = "sdn-rg"
   location            = azurerm_service_plan.aservplan.location
   service_plan_id     = azurerm_service_plan.aservplan.id
 

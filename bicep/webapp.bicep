@@ -1,7 +1,7 @@
-var resourceGroupName = 'sdninfra-bicep-rg'
+var resourceGroupName = 'sdn-rg'
 var location = 'West Europe'
 var appName = 'sdninfra-bicep'
-var appServicePlanName = 'sdninfra-bicep-sp'
+var appServicePlanName = 'sdn-asp'
 
 // resource rg 'Microsoft.Resources/resourceGroups@2021-01-01' = {
 //   name: resourceGroupName

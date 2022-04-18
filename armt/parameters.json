@@ -9,10 +9,10 @@
             "value": "West Europe"
         },
         "hostingPlanName": {
-            "value": "sdninfra-arm-sp"
+            "value": "sdn-asp"
         },
         "serverFarmResourceGroup": {
-            "value": "sdninfra-rg"
+            "value": "sdn-rg"
         },
         "alwaysOn": {
             "value": false

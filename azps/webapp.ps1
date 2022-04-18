@@ -1,7 +1,7 @@
 # Params
 $location = "West Europe"
 $appName = "sdninfra-ps"
-$rgName = "sdninfra-ps-rg"
+$rgName = "sdn-rg"
 $appServicePlanName = "sdninfra-ps-sp"
 
 # Creando resource group
@@ -10,11 +10,11 @@ New-AzResourceGroup `
     -Location $location
 
 # Creando App service plan
-New-AzAppServicePlan `
-    -ResourceGroupName $rgName `
-    -Name $appServicePlanName `
-    -Location $location `
-    -Tier "Free"
+# New-AzAppServicePlan `
+#     -ResourceGroupName $rgName `
+#     -Name $appServicePlanName `
+#     -Location $location `
+#     -Tier "Free"
 
 # Creando web app
 New-AzWebApp `
