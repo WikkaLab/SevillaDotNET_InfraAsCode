@@ -16,10 +16,9 @@ $appServicePlanName = "sdninfra-ps-sp"
 #     -Location $location `
 #     -Tier "Free"
 
-# Creando web app
+Write-Host $("##[command]Creando web app...")
 New-AzWebApp `
     -ResourceGroupName $rgName `
     -Name $appName `
     -Location $location `
-    -AppServicePlan $appServicePlanName `
-    -Force
+    -AppServicePlan $appServicePlanName -Force
