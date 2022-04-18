@@ -21,4 +21,4 @@ New-AzWebApp `
     -ResourceGroupName $rgName `
     -Name $appName `
     -Location $location `
-    -AppServicePlan $appServicePlanName -Force
+    -AppServicePlan $appServicePlanName
