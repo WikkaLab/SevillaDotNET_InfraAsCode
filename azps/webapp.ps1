@@ -5,9 +5,9 @@ $rgName = "sdn-rg"
 $appServicePlanName = "sdninfra-ps-sp"
 
 # Creando resource group
-New-AzResourceGroup `
-    -Name $rgName `
-    -Location $location
+# New-AzResourceGroup `
+#     -Name $rgName `
+#     -Location $location
 
 # Creando App service plan
 # New-AzAppServicePlan `
@@ -21,4 +21,5 @@ New-AzWebApp `
     -ResourceGroupName $rgName `
     -Name $appName `
     -Location $location `
-    -AppServicePlan $appServicePlanName
+    -AppServicePlan $appServicePlanName `
+    -Force
