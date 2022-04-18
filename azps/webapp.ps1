@@ -2,7 +2,7 @@
 $location = "West Europe"
 $appName = "sdninfra-ps"
 $rgName = "sdn-rg"
-$appServicePlanName = "sdninfra-ps-sp"
+$appServicePlanName = "sdn-asp"
 
 # Creando resource group
 # New-AzResourceGroup `
